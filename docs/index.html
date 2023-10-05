@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is my personal webpage, hand crafted - subscribe to stay up-to-date on my webdesign projects and posts">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
+  <title>Home</title>
+</head>
+<!---------------------------------- TODO ---------------------------------------------
++ (DONE) Add additional contact form at bottom home
++ format contact form 
++ (DONE) shorten file paths for file tree compat
++ (DONE) fix header image
++ adjust sticky header/ header image
++ fix mobile version of mode-toggler
+
+--------------------------------- TODO --------------------------------------------->
+<!----------- EXPERIMENTAL CODE -------------
+  <div class="container">
+    <h2 class="mode-status">Currently in Light Mode</h2>
+    <label class="toggle-switch">
+      <input type="checkbox" id="mode-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+------------- EXPERIMENTAL CODE ------------>
+
+<body class="wrapper">
+  <header id="scrolltop">
+    <nav id="navbar" class="navbar navbar-dark fixed-top navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">mC</a>
+        <button id="hamburger" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav me-auto">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#scrollintro">Introduction</a> <!-- safe to delete later -->
+            <a class="nav-link" href="./about.html">Bio</a>
+            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+            <a class="nav-link" href="./posts.html">Posts & Updates</a>
+            <a class="nav-link" href="#scrollcontact">Contact</a>
+            <a class="nav-link disabled" href="#scrolltop"></a>
+            <a class="nav-link disabled"></a>
+          </div>
+          <!----------------- TEMP --------------------
+            <div class="toggle-switch-indicator">
+            <img id="indicator-image" src="./media/darkmode.png">
+            </div>
+          --------------------- TEMP -------------------->
+          <div class="navbar-addon">
+            <p class="mode-status">Light</p>
+            <label class="toggle-switch">
+              <input type="checkbox" id="mode-toggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <button id="registerbtn" type="button" data-bs-toggle="modal" data-bs-target="#registermod" class="btn btn-outline-secondary">Contact</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <div id="introimgframe" class="frame">
+      <img id="introimg" src="./media/header.jpg">
+    </div>
+    <!----------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------->
+    <section id="scrollintro" class="section paragraph">
+      <h1 id="scrollintro" class="introheading">Introduction</h1>
+      <p>Welcome to my personal website, hand crafted. The purpose of this website will be to serve as a sort of hub for others to observe a personal portfolio that illustrates my journey through life thus far as well as projects that I have created, technical or otherwise. Read below for more information on the mission behind this website and to learn more about me.</p>
+      <p><b>Mission:</b> This website will act as a hub to promote my personal brand of content. This site will also provide access to personal projects that champion causes, philosophies and other content that I resonate with and think will benefit others! Please bear with me as this site is in its infancy. This is only the beginning!</p>
+      <p><b>Projects:</b> Outside of regular posts that will discuss happenings in my life and professional journey, I plan on releasing other websites that will host information and discussions as mentioned in the mission statement above. Stay tuned.</p>
+    </section>
+    <hr class="break">
+    <section id="scrollbio" class="section about">
+      <h2 class="subheading">About Me</h2>
+      <p class="bio">Hi! My name is Matthew Chandler. I have been living in Austin, Texas for about 3 years now. In fact, I have been living in Texas for my entire life! For work, I am a route scheduler with Amazon; however, I am looking to switch my career and become a web/software developer! And it is because of this that I have created this website template! I went to high school in a town called Magnolia, just outside of Houston and I went to Baylor University for my bachelor's and professional degrees. Sic 'em!</p>
+      <div id="meimgframe" class="frame">
+        <img id="meimg" class="img" src="./media/prof.jpeg">
+      </div>
+    </section>
+    <hr class="break">
+    <section id="scrollcontact" class="section contact">
+      <h3>Contact Me</h3>
+      <!------------------------- DUPLICATED MODAL ---------------------------------------->
+      <div id="contact-form" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Me</h1> -->
+          </div>
+          <div class="modal-body">
+            <form action="mailto: chan.man@live.com" method="post" enctype="text/plain" target="_blank">
+              <!--<div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="email" class="form-control" id="recipient-name" placeholder="chan.man@live.com">
+          </div> -->
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text" placeholder="Let's get in touch!" name="Website Message"></textarea>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="Subscriber">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Sign me up for email updates!</label>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-secondary disabled" action="example.htm" method="get" target="_blank">Am I Subscribed?</button>
+            <button type="submit" class="btn btn-primary">Send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------- REPLACED WITH DUPLICATE MODAL ABOVE------------------------------
+      <form>
+        <label for="input-name">
+          <p>Full Name:</p>
+          <input id="input-name" type="text">
+        </label>
+        <label for="input-email">
+          <p>Email Address:</p>
+          <input id="input-email" type="email">
+        </label>
+        <label for="input-message">
+          <p>Message:</p>
+          <input id="input-message" type="text">
+        </label>
+      </form>
+  -------------------------------------------------------------------------------------------------------------->
+  </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</body>
+<!------------------------- Register Button Modal ------------------------------------------>
+<div class="modal fade" id="registermod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Me</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="mailto: chan.man@live.com" method="post" enctype="text/plain" target="_blank">
+          <!--<div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="email" class="form-control" id="recipient-name" placeholder="chan.man@live.com">
+          </div> -->
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text" placeholder="Let's get in touch!" name="Website Message"></textarea>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="Subscriber">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Sign me up for email updates!</label>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-secondary disabled" action="example.htm" method="get" target="_blank">Am I Subscribed?</button>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------- Register Button Modal ------------------------------------------>
+
+</html>
+<!--------------------------- scroll spy? --------------------------->
