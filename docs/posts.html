@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is my personal webpage, hand crafted - subscribe to stay up-to-date on my webdesign projects and posts">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <title>Updates</title>
+</head>
+<!---------------------------------- TODO ---------------------------------------------
++ implement permanent to-do-list miniproject for website updates
++ (DONE) shorten file paths for file tree compat
++ fix accordion header, no shrinking
+
+--------------------------------- TODO --------------------------------------------->
+<!----------- TEMP -------------
+  <div class="container">
+    <h2 class="mode-status">Currently in Light Mode</h2>
+    <label class="toggle-switch">
+      <input type="checkbox" id="mode-toggle">
+      <span class="slider"></span>
+</label>                          
+  </div>
+------------- TEMP ------------>
+
+<body class="wrapper">
+  <header id="scrolltop">
+    <nav id="navbar" class="navbar navbar-dark fixed-top navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">mC</a>
+        <button id="hamburger" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav me-auto">
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="./index.html">Introduction</a>
+            <a class="nav-link" href="./about.html">Bio</a>
+            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+            <a class="nav-link active" aria-current="page" href="#">Posts & Updates</a>
+            <a class="nav-link" href="./index.html">Contact</a>
+            <a class="nav-link disabled" href="./index.html"></a>
+            <a class="nav-link disabled"></a>
+          </div>
+          <div class="navbar-addon">
+            <p class="mode-status">Light</p>
+            <label class="toggle-switch">
+              <input type="checkbox" id="mode-toggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <button id="registerbtn" type="button" data-bs-toggle="modal" data-bs-target="#registermod" class="btn btn-outline-secondary">Contact</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <!---------------------------------- ADDED TO DO LIST ------------------------------
+
+    <div class="container mt-5">
+      <div class="content mx-auto">
+        <h1 class="mb-3">To-Do List</h1>
+        <div class="mb-3">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control " placeholder="Enter a new task...">
+            </div>
+            <div class="d-grid col-md-2">
+              <button id="add-task" class="btn btn-primary">Add Task</button>
+            </div>
+          </div>
+        </div>
+        <div id="task-list"></div>
+      </div>
+    </div>
+
+    ------------------------------- ADDED TO DO ------------------------------>
+    <section id="scroll-posts" class="section updates text">
+      <h1>Posts & Updates (Under Construction!)</h1>
+      <!-- omitted parent div "posts" -->
+     
+        <!-- omitted data-bs-parent -->
+        <div class="accordion accordion-flush" id="post-accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> + August 2023 </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+              <div class="accordion-body">
+                <strong>- Web Developer: Journey thus far</strong><br>
+                <p>What a month this past July has been. I moved up within Amazon and landed a higher level position, one that will also afford me a small bit of time to practice coding during the day. I also started a front-end software developer course that will likely open some doors for me and allow me to fulfill my next immediate goal of transitioning to a new career in technology—specifically, web/software development. Hopefully, after landing a front-end focused role I can continue to learn and become a full-stack developer. As I am continuing to learn more front-end web development tools, I hope to start creating a portfolio of websites that really showcase my skills—a few of which will serve as personal projects that will hopefully contribute some meaningful content the world. This month is a short post as I am struggling to balance things and manage my time right now. Thanks for taking the time to read, stay tuned for future posts! &#128591</p>
+                <strong>- Web Developer: Journey thus far</strong><br>
+                <p>- Coming soon...</p>
+                <strong>- Entry #3</strong><br>
+                <p>content</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> + September 2023 </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+              <div class="accordion-body">
+                <strong>- Entry #1</strong>
+                <p>content</p>
+                <strong>- Entry #2</strong>
+                <p>content</p>
+                <strong>- Entry #3</strong>
+                <p>content</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> + October 2023 </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+              <div class="accordion-body">
+                <strong>- Entry #1</strong>
+                <p>content</p>
+                <strong>- Entry #2</strong>
+                <p>content</p>
+                <strong>- Entry #3</strong>
+                <p>content</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </section>
+  </main>
+  <footer id="scroll-footer" class="section footer">
+  </footer>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./js/index.js"></script>
+</body>
+<!-------------------------------- START REGISTER MODAL ---------------------------------------------->
+<div class="modal fade" id="registermod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Me</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="mailto: chan.man@live.com" method="post" enctype="text/plain" target="_blank">
+          <!--<div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="email" class="form-control" id="recipient-name" placeholder="chan.man@live.com">
+          </div> -->
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text" placeholder="Let's get in touch!" name="Website Message"></textarea>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="Subscriber">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Sign me up for email updates!</label>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-secondary disabled" action="example.htm" method="get" target="_blank">Am I Subscribed?</button>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----------------------------- END REGISTER MODAL ---------------------------------->
+</html>
