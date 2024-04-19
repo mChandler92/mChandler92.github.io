@@ -1,0 +1,13 @@
+ 
+  const [theme, setTheme] = useState('default');
+  
+  const toggleTheme = () => {
+    if (theme === 'default') {
+      setTheme('dark');
+    } else {
+      setTheme('default');
+    }
+  };
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
