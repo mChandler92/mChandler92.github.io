@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*
 @keyframes intropic {
   from {
     object-position: 500px;
@@ -10,13 +11,15 @@
     object-position: 0px;
   }
 }
+*/
 
 
+/***************************** START GLOBAL CSS ***********************************/
 
-/****************************** START GLOBAL CSS ***********************************/
-.wrapper {
+.master {
   background-color: #a1bdc9;
 }
+
 
 #navbar {
   border-style: ridge;
@@ -75,7 +78,7 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 100%;
-  flex-direction: row:
+  flex-direction: row;
 }
 
 
@@ -232,6 +235,17 @@ section > h1, h2 {
   transition: all 0.4s ease-in;
 }
 
+/******* REACT ********/
+.dark {
+  background-color: #333;
+  color: #f0f0f0;
+  transition: all 0.4s ease-in;
+}
+
+.light {
+  background-color: #a1bdc9 ;
+}
+/********** REACT ************/
 /************ TOGGLE ************/
 .dark-mode-alt {
   background-color: #333;
@@ -398,15 +412,23 @@ button#next {
   color: #000;
 }
 
+
+/****** EDITED .item and .right/left FOR REACT/JS IMCOMPAT */
+
 .item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 75vh;
-  opacity: 0;
+ margin: 2%;
+
+  /*opacity: 0;
   transition: opacity 0.5s, transform 1.0s;
-  margin: 2%;
+ 
+}
+*/
+
 }
 
 .item__content {
@@ -429,7 +451,7 @@ button#next {
 .item>p {
   text-align: center;
 }
-
+/*
 .left {
   transform-origin: left center;
   transform: translateX(-50%);
@@ -440,6 +462,7 @@ button#next {
   transform: translateX(50%);
 }
 
+*/
 .slide-in {
   opacity: 1 !important;
   transform: translateX(0);

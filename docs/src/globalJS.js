@@ -1,7 +1,9 @@
+
+
 /////////////// DARK TOGGLE /////////////
-const body = document.querySelector('body');
-const modeToggle = document.getElementById('mode-toggle');
-const modeStatus = document.querySelector('.mode-status');
+const body = window.querySelector('body');
+const modeToggle = window.getElementById('mode-toggle');
+const modeStatus = window.querySelector('.mode-status');
 
 function toggleMode() {
   body.classList.toggle('dark-mode');
@@ -9,6 +11,8 @@ function toggleMode() {
   modeStatus.innerText = modeMessage;
 };
 modeToggle.addEventListener('click', toggleMode);
+
+
 
 ///////////// IMAGE SLIDER ///////////////
 /*
@@ -59,6 +63,7 @@ nextImage.addEventListener('click', function() {
 */
 
 //////////////////// START FADE IN ///////////////
+
 const items = document.querySelectorAll('.item'); //omitted 'not first child'
 const options = {
   threshold: 0.2
@@ -75,6 +80,7 @@ const observer = new IntersectionObserver(addSlideIn, options)
 items.forEach(item => {
   observer.observe(item)
 });
+
 ///////////////////// END FADE IN  ////////////////////////
 
 
@@ -161,7 +167,7 @@ const handleChange = () => {
       element.nextElementSibling.style.color = '#212529'
     }
 
-
+  
 
 /*
     // If the element is a select dropdown and the default option is selected, style it with a red border and red text
