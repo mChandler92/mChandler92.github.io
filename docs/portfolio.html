@@ -8,7 +8,11 @@
    <meta name="description" content="This is my personal webpage, hand crafted - subscribe to stay up-to-date on my webdesign projects and posts">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
    <link rel="stylesheet" href="./css/index.css">
-   <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> --> 
+   <link rel="apple-touch-icon" sizes="180x180" href="/media/favicons/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/media/favicons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/media/favicons/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
    <title>My Portfolio</title>
  </head>
 
@@ -44,7 +48,7 @@
            <div class="navbar-nav me-auto">
              <a class="nav-link" href="./index.html">Home</a>
              <a class="nav-link" href="./index.html">Introduction</a>
-             <a class="nav-link" href="./about.html">Bio</a>
+             <a class="nav-link" href="./about.html">Page</a>
              <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
              <a class="nav-link" href="./posts.html">Posts & Updates</a>
              <a class="nav-link" href="./index.html">Contact</a>
@@ -291,7 +295,14 @@
          </div>
 
             <div id="card9" class="card">
-           <img class="preview" src="./media/practiceProblems.png" class="card-img-top" alt="..." usemap="#">
+           <img class="preview" src="./media/practiceProblems.png" class="card-img-top" alt="..." usemap="#image_map9">
+              <map name="image_map9">
+                  <area target="_blank" alt="" title="" href="https://github.com/mChandler92/problems.git" coords="2531,940,11,1" shape="rect">
+              </map>
+
+
+
+
            <div class="card-body">
              <h5 class="card-title">Data Structures and Algorithms Practice</h5>
              <p class="card-text">Showcase</p>
@@ -300,6 +311,8 @@
          </div>
 
        </div>
+
+       <p>**I will be adding these applications to a separate, interactive web page soon**</p>
        <!----------------------- END PROJECT CARDS ------------------->
      </section>
 
